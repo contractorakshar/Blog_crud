@@ -6,11 +6,11 @@ const app = express();
 const Url = require("./myUrl");
 const Articles = require("./models/article");
 const fetch = require("node-fetch");
-mongoose.connect(Url.mongoDB, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-});
+// mongoose.connect(Url.mongoDB, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useCreateIndex: true,
+// });
 app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: false }));
